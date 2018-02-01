@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC23F64F2007BDDB00AD0DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23F64E2007BDDB00AD0DF2 /* ViewController.swift */; };
+		FC23F6512007C11E00AD0DF2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23F6502007C11E00AD0DF2 /* CollectionViewCell.swift */; };
+		FC23F6532007C30F00AD0DF2 /* ActionColorAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23F6522007C30F00AD0DF2 /* ActionColorAdditions.swift */; };
+		FC23F6552007D00E00AD0DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23F6542007D00E00AD0DF2 /* AppDelegate.swift */; };
+		FCAF68802007B0F3008D4422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAF687E2007B0F3008D4422 /* Main.storyboard */; };
+		FCAF68822007B0F3008D4422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCAF68812007B0F3008D4422 /* Assets.xcassets */; };
+		FCAF68852007B0F3008D4422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAF68832007B0F3008D4422 /* LaunchScreen.storyboard */; };
+		FCAF68882007B0F3008D4422 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAF68872007B0F3008D4422 /* main.m */; };
+		FCAF689E2007B115008D4422 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAF689D2007B115008D4422 /* Action.swift */; };
+		FCAF68A22007B138008D4422 /* XNGActionKey.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAF68A02007B138008D4422 /* XNGActionKey.m */; };
+		FCAF68AA2007B274008D4422 /* ActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAF68A92007B274008D4422 /* ActionTests.swift */; };
+		FCAF68AC2007B345008D4422 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAF689D2007B115008D4422 /* Action.swift */; };
+		FCAF68AE2007B40D008D4422 /* CellSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAF68AD2007B40D008D4422 /* CellSelectable.swift */; };
+		FCAF68AF2007B42E008D4422 /* CellSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAF68AD2007B40D008D4422 /* CellSelectable.swift */; };
+		FCAF68B22007B5A2008D4422 /* CellPreviewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAF68B12007B500008D4422 /* CellPreviewable.swift */; };
+		FCAF68B32007B5A3008D4422 /* CellPreviewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAF68B12007B500008D4422 /* CellPreviewable.swift */; };
+		FCAF68B62007B741008D4422 /* XNGCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAF68B52007B741008D4422 /* XNGCollectionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCAF688E2007B0F3008D4422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCAF686D2007B0F3008D4422 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCAF68742007B0F3008D4422;
+			remoteInfo = "Unified Action Handling";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC23F64E2007BDDB00AD0DF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC23F6502007C11E00AD0DF2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FC23F6522007C30F00AD0DF2 /* ActionColorAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionColorAdditions.swift; sourceTree = "<group>"; };
+		FC23F6542007D00E00AD0DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCAF68752007B0F3008D4422 /* Unified Action Handling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unified Action Handling.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAF687F2007B0F3008D4422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCAF68812007B0F3008D4422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCAF68842007B0F3008D4422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCAF68862007B0F3008D4422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAF68872007B0F3008D4422 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCAF688D2007B0F3008D4422 /* Unified Action HandlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unified Action HandlingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAF68932007B0F3008D4422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAF689C2007B114008D4422 /* Unified Action Handling-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unified Action Handling-Bridging-Header.h"; sourceTree = "<group>"; };
+		FCAF689D2007B115008D4422 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		FCAF689F2007B138008D4422 /* XNGActionKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNGActionKey.h; sourceTree = "<group>"; };
+		FCAF68A02007B138008D4422 /* XNGActionKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNGActionKey.m; sourceTree = "<group>"; };
+		FCAF68A12007B138008D4422 /* XNGCellSelectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNGCellSelectable.h; sourceTree = "<group>"; };
+		FCAF68A72007B1F5008D4422 /* XNGCellPreviewable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNGCellPreviewable.h; sourceTree = "<group>"; };
+		FCAF68A82007B272008D4422 /* Unified Action HandlingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unified Action HandlingTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		FCAF68A92007B274008D4422 /* ActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionTests.swift; sourceTree = "<group>"; };
+		FCAF68AD2007B40D008D4422 /* CellSelectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSelectable.swift; sourceTree = "<group>"; };
+		FCAF68B12007B500008D4422 /* CellPreviewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPreviewable.swift; sourceTree = "<group>"; };
+		FCAF68B42007B741008D4422 /* XNGCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNGCollectionViewController.h; sourceTree = "<group>"; };
+		FCAF68B52007B741008D4422 /* XNGCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNGCollectionViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCAF68722007B0F3008D4422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAF688A2007B0F3008D4422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCAF686C2007B0F3008D4422 = {
+			isa = PBXGroup;
+			children = (
+				FCAF68772007B0F3008D4422 /* Unified Action Handling */,
+				FCAF68902007B0F3008D4422 /* Unified Action HandlingTests */,
+				FCAF68762007B0F3008D4422 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCAF68762007B0F3008D4422 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCAF68752007B0F3008D4422 /* Unified Action Handling.app */,
+				FCAF688D2007B0F3008D4422 /* Unified Action HandlingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCAF68772007B0F3008D4422 /* Unified Action Handling */ = {
+			isa = PBXGroup;
+			children = (
+				FCAF68B02007B4E0008D4422 /* ActionHandling */,
+				FC23F6522007C30F00AD0DF2 /* ActionColorAdditions.swift */,
+				FC23F6502007C11E00AD0DF2 /* CollectionViewCell.swift */,
+				FC23F6542007D00E00AD0DF2 /* AppDelegate.swift */,
+				FC23F64E2007BDDB00AD0DF2 /* ViewController.swift */,
+				FCAF687E2007B0F3008D4422 /* Main.storyboard */,
+				FCAF68812007B0F3008D4422 /* Assets.xcassets */,
+				FCAF68832007B0F3008D4422 /* LaunchScreen.storyboard */,
+				FCAF68862007B0F3008D4422 /* Info.plist */,
+				FCAF68872007B0F3008D4422 /* main.m */,
+				FCAF689C2007B114008D4422 /* Unified Action Handling-Bridging-Header.h */,
+			);
+			path = "Unified Action Handling";
+			sourceTree = "<group>";
+		};
+		FCAF68902007B0F3008D4422 /* Unified Action HandlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCAF68A92007B274008D4422 /* ActionTests.swift */,
+				FCAF68932007B0F3008D4422 /* Info.plist */,
+				FCAF68A82007B272008D4422 /* Unified Action HandlingTests-Bridging-Header.h */,
+			);
+			path = "Unified Action HandlingTests";
+			sourceTree = "<group>";
+		};
+		FCAF68B02007B4E0008D4422 /* ActionHandling */ = {
+			isa = PBXGroup;
+			children = (
+				FCAF689F2007B138008D4422 /* XNGActionKey.h */,
+				FCAF68A02007B138008D4422 /* XNGActionKey.m */,
+				FCAF68A12007B138008D4422 /* XNGCellSelectable.h */,
+				FCAF68A72007B1F5008D4422 /* XNGCellPreviewable.h */,
+				FCAF68B12007B500008D4422 /* CellPreviewable.swift */,
+				FCAF68AD2007B40D008D4422 /* CellSelectable.swift */,
+				FCAF689D2007B115008D4422 /* Action.swift */,
+				FCAF68B42007B741008D4422 /* XNGCollectionViewController.h */,
+				FCAF68B52007B741008D4422 /* XNGCollectionViewController.m */,
+			);
+			path = ActionHandling;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCAF68742007B0F3008D4422 /* Unified Action Handling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCAF68962007B0F3008D4422 /* Build configuration list for PBXNativeTarget "Unified Action Handling" */;
+			buildPhases = (
+				FCAF68712007B0F3008D4422 /* Sources */,
+				FCAF68722007B0F3008D4422 /* Frameworks */,
+				FCAF68732007B0F3008D4422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Unified Action Handling";
+			productName = "Unified Action Handling";
+			productReference = FCAF68752007B0F3008D4422 /* Unified Action Handling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCAF688C2007B0F3008D4422 /* Unified Action HandlingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCAF68992007B0F3008D4422 /* Build configuration list for PBXNativeTarget "Unified Action HandlingTests" */;
+			buildPhases = (
+				FCAF68892007B0F3008D4422 /* Sources */,
+				FCAF688A2007B0F3008D4422 /* Frameworks */,
+				FCAF688B2007B0F3008D4422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCAF688F2007B0F3008D4422 /* PBXTargetDependency */,
+			);
+			name = "Unified Action HandlingTests";
+			productName = "Unified Action HandlingTests";
+			productReference = FCAF688D2007B0F3008D4422 /* Unified Action HandlingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCAF686D2007B0F3008D4422 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "XING SE";
+				TargetAttributes = {
+					FCAF68742007B0F3008D4422 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					FCAF688C2007B0F3008D4422 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FCAF68742007B0F3008D4422;
+					};
+				};
+			};
+			buildConfigurationList = FCAF68702007B0F3008D4422 /* Build configuration list for PBXProject "Unified Action Handling" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCAF686C2007B0F3008D4422;
+			productRefGroup = FCAF68762007B0F3008D4422 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCAF68742007B0F3008D4422 /* Unified Action Handling */,
+				FCAF688C2007B0F3008D4422 /* Unified Action HandlingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCAF68732007B0F3008D4422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAF68852007B0F3008D4422 /* LaunchScreen.storyboard in Resources */,
+				FCAF68822007B0F3008D4422 /* Assets.xcassets in Resources */,
+				FCAF68802007B0F3008D4422 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAF688B2007B0F3008D4422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCAF68712007B0F3008D4422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC23F6552007D00E00AD0DF2 /* AppDelegate.swift in Sources */,
+				FC23F6512007C11E00AD0DF2 /* CollectionViewCell.swift in Sources */,
+				FC23F64F2007BDDB00AD0DF2 /* ViewController.swift in Sources */,
+				FCAF689E2007B115008D4422 /* Action.swift in Sources */,
+				FCAF68A22007B138008D4422 /* XNGActionKey.m in Sources */,
+				FCAF68B62007B741008D4422 /* XNGCollectionViewController.m in Sources */,
+				FCAF68AE2007B40D008D4422 /* CellSelectable.swift in Sources */,
+				FCAF68B22007B5A2008D4422 /* CellPreviewable.swift in Sources */,
+				FCAF68882007B0F3008D4422 /* main.m in Sources */,
+				FC23F6532007C30F00AD0DF2 /* ActionColorAdditions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAF68892007B0F3008D4422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAF68AF2007B42E008D4422 /* CellSelectable.swift in Sources */,
+				FCAF68B32007B5A3008D4422 /* CellPreviewable.swift in Sources */,
+				FCAF68AC2007B345008D4422 /* Action.swift in Sources */,
+				FCAF68AA2007B274008D4422 /* ActionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCAF688F2007B0F3008D4422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCAF68742007B0F3008D4422 /* Unified Action Handling */;
+			targetProxy = FCAF688E2007B0F3008D4422 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCAF687E2007B0F3008D4422 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCAF687F2007B0F3008D4422 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCAF68832007B0F3008D4422 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCAF68842007B0F3008D4422 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCAF68942007B0F3008D4422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MODULE_NAME = "";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = UnifiedActionHandling;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCAF68952007B0F3008D4422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MODULE_NAME = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = UnifiedActionHandling;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCAF68972007B0F3008D4422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Unified Action Handling/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xing.Unified-Action-Handling";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Unified Action Handling/Unified Action Handling-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCAF68982007B0F3008D4422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Unified Action Handling/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xing.Unified-Action-Handling";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Unified Action Handling/Unified Action Handling-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCAF689A2007B0F3008D4422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Unified Action HandlingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xing.Unified-Action-HandlingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Unified Action HandlingTests/Unified Action HandlingTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unified Action Handling.app/Unified Action Handling";
+			};
+			name = Debug;
+		};
+		FCAF689B2007B0F3008D4422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Unified Action HandlingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xing.Unified-Action-HandlingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Unified Action HandlingTests/Unified Action HandlingTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unified Action Handling.app/Unified Action Handling";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCAF68702007B0F3008D4422 /* Build configuration list for PBXProject "Unified Action Handling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAF68942007B0F3008D4422 /* Debug */,
+				FCAF68952007B0F3008D4422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCAF68962007B0F3008D4422 /* Build configuration list for PBXNativeTarget "Unified Action Handling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAF68972007B0F3008D4422 /* Debug */,
+				FCAF68982007B0F3008D4422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCAF68992007B0F3008D4422 /* Build configuration list for PBXNativeTarget "Unified Action HandlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAF689A2007B0F3008D4422 /* Debug */,
+				FCAF689B2007B0F3008D4422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCAF686D2007B0F3008D4422 /* Project object */;
+}
